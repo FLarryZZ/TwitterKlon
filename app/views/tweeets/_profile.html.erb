@@ -6,7 +6,7 @@
 				<div class="media-left">
 					<figure class="image is-64x64">
 						<%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
-						
+
 					</figure>
 				</div>
 				<div class="media-content">
@@ -30,13 +30,14 @@
 				<div class="level-item has-centered-text">
 					<div>
 						<p class="heading">Following</p>
-						<p class="title is-6"><%=link_to 'Follow', user_relationships_path(current_user), method: :post,button:'idi' unless @rel.present? %></p>
+									<p class="title is-6">		<%= current_user.following.count %></p>
+
 					</div>
 				</div>
 					<div class="level-item has-centered-text">
 					<div>
 						<p class="heading">Followers</p>
-						<p class="title is-6"><%= current_user.following.count %></p>
+						<p class="title is-6"><%= current_user.follower.count %></p>
 					</div>
 				</div>
 			</div>

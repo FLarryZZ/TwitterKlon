@@ -1,0 +1,3 @@
+class OmniauthController < ApplicationController
+
+end

@@ -7,8 +7,10 @@ ruby '2.7.0'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
+gem 'omniauth', '~> 1.9.1'
+gem 'omniauth-facebook'
 
-
+gem 'activerecord-session_store'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -26,10 +28,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'bulma-rails', '~> 0.9.1'
 gem 'simple_form', '~> 5.0', '>= 5.0.3'
 gem 'gravatar_image_tag', '~> 1.2'
-gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
+gem 'sqlite3'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
