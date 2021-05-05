@@ -43,7 +43,7 @@
 
 					<% end %>
 
-							<% if user_signed_in? && (User.find(5).followers.count)%2==0 %>
+							<% if user_signed_in?  %>
 									<p class="title is-6"><%=link_to 'Follow', user_relationships_path(User.find(5)), method: :post,button:'idi' %></p>
 							<% end %>
  <% if user_signed_in? && (User.find(5).followers.count)%2==1 %>
